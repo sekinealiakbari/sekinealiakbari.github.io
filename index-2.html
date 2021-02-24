@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="DIGITAL COIN Cryptocurrency Market and Trading Site Template">
@@ -24,13 +24,16 @@
 
     <!-- YOUR CUSTOM CSS -->
     <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- Modernizr -->
+	<script src="js/modernizr.js"></script>
 
 </head>
 
 <body>
-		
+	
 	<div id="page">
-		
+	
 	<header class="header menu_2">
 		<div id="preloader"><div data-loader="circle-side"></div></div><!-- /Preload -->
 		<div id="logo">
@@ -90,7 +93,7 @@
 		<!-- Search Menu -->
 		<div class="search-overlay-menu">
 			<span class="search-overlay-close"><span class="closebt"><i class="ti-close"></i></span></span>
-			<form id="searchform" method="get">
+			<form role="search" id="searchform" method="get">
 				<input value="" name="q" type="search" placeholder="Search..." />
 				<button type="submit"><i class="icon_search"></i>
 				</button>
@@ -100,59 +103,17 @@
 	<!-- /header -->
 	
 	<main>
-		<div id="form_container">
-		<div class="wrapper">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div class="intro_title_header">
-							<h3>Become a trader in Cryptocurrencies</h3>
-							<p>Trade with Confidence and Ease!</p>
-							<ul>
-								<li>20 years of <strong>excellence</strong> in financial trading</li>
-								<li><strong>Advanced</strong> technology compliant</li>
-								<li>A <strong>trading coach</strong> and account manager</li>
-								<li>Highest <strong>data protection</strong> standards</li>
-							</ul>
-						</div>
-					</div>
-					<div class="col-lg-5">
-						<div id="form_contact">
-							<div id="ribbon"><strong>100%</strong> Secure</div>
-							<h3>Getting Started</h3>
-							<p>With no obligations or hidden fees.</p>
-							<div id="message-home"></div>
-							<form method="post" action="assets/contact_home.php" id="contact_home" autocomplete="off">
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="text" class="form-control" name="name_contact_home" id="name_contact_home" placeholder="Name and Last name">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="text" class="form-control" name="email_contact_home" id="email_contact_home" placeholder="Your email">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="text" class="form-control" name="phone_contact_home" id="phone_contact_home" placeholder="Telephone">
-										</div>
-									</div>
-									<div class="col-md-12">
-										<div class="form-group">
-											<input type="submit" value="Open Account" class="btn_1 full-width" id="submit-contact-home">
-										</div>
-										<p class="text-center"><small>Trading carries a risk to your capital, and maybe not be suitable for all investors and traders.</small></p>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div><!-- End row -->
-			</div><!-- End container -->
-		</div>
-		</div><!-- End form container -->
+		<section class="header-video">
+			<div id="hero_video">
+				<div>
+					<h3><strong>Become a Trader</strong><br>in Cryptocurrencies</h3>
+					<p>Eam fastidii erroribus corrumpit cu, in quo epicuri recusabo, <strong>est vocent</strong> eleifend inimicus at.</p>
+				</div>
+				<a href="#first_section" class="btn_explore hidden_tablet"><i class="ti-arrow-down"></i></a>
+			</div>
+			<img src="img/video_fix.png" alt="" class="header-video--media" data-video-src="video/intro" data-teaser-source="video/intro" data-provider="" data-video-width="1920" data-video-height="960">
+		</section>
+		<!-- /header-video -->
 
 		<div class="features clearfix">
 			<div class="container">
@@ -171,7 +132,7 @@
 		</div>
 		<!-- /features -->
 
-		<div class="container margin_default">
+		<div class="container margin_default" id="first_section">
 			<div class="main_title_2">
 				<span><em></em></span>
 				<h2>How it works</h2>
@@ -319,7 +280,7 @@
 
 		<div class="call_section">
             <div class="container clearfix">
-                <div class="col-lg-5 col-md-7 float-right">
+                <div class="col-lg-5 col-md-6 float-right">
                     <div class="box_1">
                         <h3>Cryptocurrency Calculator</h3>
                         <p>Ius cu tamquam persequeris, eu veniam apeirian platonem qui, id aliquip voluptatibus pri. Ad vis ignota virtute definitiones.</p>
@@ -518,5 +479,16 @@
     <script src="js/main.js"></script>
 	<script src="assets/validate.js"></script>
 	
+	<!-- SPECIFIC SCRIPTS -->
+	<script src="js/video_header.js"></script>
+	<script>
+		HeaderVideo.init({
+			container: $('.header-video'),
+			header: $('.header-video--media'),
+			videoTrigger: $("#video-trigger"),
+			autoPlayVideo: true
+		});
+	</script>
+
 </body>
 </html>
